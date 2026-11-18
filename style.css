@@ -1,0 +1,281 @@
+/* Container & Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0c10;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header & Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121620;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.logo em {
+    color: #ff5a1f;
+    font-style: normal;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #889ea0;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+    background: #092c30;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 1rem 0;
+}
+
+.hero-eyebrow {
+    color: #ff5a1f;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.hero-desc {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Buttons Styling */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn--solid {
+    background: #ff5a1f;
+    color: #ffffff;
+}
+
+.btn--solid:hover {
+    background: #e04810;
+}
+
+.btn--ghost {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.btn--ghost:hover {
+    border-color: #ff5a1f;
+    color: #ff5a1f;
+}
+/* Featured Products Section */
+.section {
+    padding: 5rem 0;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-head__eyebrow {
+    color: #ff5a1f;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-head__title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.accent-text {
+    color: #ff5a1f;
+    font-style: normal;
+}
+
+.section-head__desc {
+    color: #94a3b8;
+}
+
+.collection__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: #121620;
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 90, 31, 0.3);
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 90, 31, 0.1);
+    color: #ff5a1f;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.product-card__media {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.product-card__media img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.product-card__name {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.product-card__foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    margin-top: auto;
+}
+
+.product-card__price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5a1f;
+}
+
+.product-card__price span {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: normal;
+}
+
+.btn--sm {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+}
+/* FAQ Section Styles */
+.faq__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    background: #121620;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(255, 90, 31, 0.3);
+}
+
+.faq-item__question {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item__answer {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+.footer {
+    background: #080a0e;
+    padding: 3rem 0 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.footer__desc {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.footer__copy {
+    color: #64748b;
+    font-size: 0.85rem;
+}
